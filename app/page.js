@@ -4,12 +4,12 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 const data = [
-  { name: "Jan", value: 400 },
-  { name: "Feb", value: 300 },
-  { name: "Mar", value: 500 },
-  { name: "Apr", value: 200 },
-  { name: "May", value: 700 },
-  { name: "Jun", value: 600 },
+  { name: "Jan", value: 40 },
+  { name: "Feb", value: 30 },
+  { name: "Mar", value: 37 },
+  { name: "Apr", value: 20 },
+  { name: "May", value: 33 },
+  { name: "Jun", value: 42 },
 ];
 
 export default function HomePage() {
@@ -19,44 +19,44 @@ export default function HomePage() {
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <Card className="shadow-md rounded-2xl">
           <CardHeader>
-            <CardTitle>Total Users</CardTitle>
+            <CardTitle>Temperature</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2xl font-semibold">1,245</p>
+            <p className="text-2xl font-semibold">28</p>
           </CardContent>
         </Card>
 
         <Card className="shadow-md rounded-2xl">
           <CardHeader>
-            <CardTitle>Active Sessions</CardTitle>
+            <CardTitle>Clouds</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2xl font-semibold">318</p>
+            <p className="text-2xl font-semibold">23</p>
           </CardContent>
         </Card>
 
         <Card className="shadow-md rounded-2xl">
           <CardHeader>
-            <CardTitle>Revenue</CardTitle>
+            <CardTitle>Wind</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2xl font-semibold">$12,430</p>
+            <p className="text-2xl font-semibold">10.84</p>
           </CardContent>
         </Card>
 
         <Card className="shadow-md rounded-2xl">
           <CardHeader>
-            <CardTitle>Conversion Rate</CardTitle>
+            <CardTitle>Humidity</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2xl font-semibold">4.3%</p>
+            <p className="text-2xl font-semibold">10%</p>
           </CardContent>
         </Card>
       </section>
 
       {/* Bottom Line Chart */}
       <section className="bg-card shadow-md rounded-2xl p-6 h-80">
-        <h2 className="text-lg font-semibold mb-4">Monthly Performance</h2>
+        <h2 className="text-lg font-semibold mb-4">Monthly History</h2>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" />
